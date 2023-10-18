@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Sponser from "./Sponser";
 import Helmet from 'react-helmet';
+import ScrollToTop from "../ScrollToTop";
 
 
 const Home = () => {
@@ -19,45 +20,26 @@ useEffect(() => {
   }, []);
 
     return (
-        <div>
+        <div><ScrollToTop />
 <Helmet><title>Home</title></Helmet>
-           <div>
-            <div className="carousel w-full h-[90vh] max-md:h-[50vh]">
-  <div id="slide1" className="carousel-item relative w-full">
-    <img src="https://ebook.projectbd.com/wp-content/uploads/2023/10/slider1.jpg" className="w-full" />
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide4" className="btn btn-circle">❮</a> 
-      <a href="#slide2" className="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide2" className="carousel-item relative w-full">
-    <img src="https://ebook.projectbd.com/wp-content/uploads/2023/10/slider2.jpg" className="w-full" />
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide1" className="btn btn-circle">❮</a> 
-      <a href="#slide3" className="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide3" className="carousel-item relative w-full">
-    <img src="https://ebook.projectbd.com/wp-content/uploads/2023/10/slider3.jpg" className="w-full" />
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide2" className="btn btn-circle">❮</a> 
-      <a href="#slide4" className="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide4" className="carousel-item relative w-full">
-    <img src="https://ebook.projectbd.com/wp-content/uploads/2023/10/slider4.jpg" className="w-full" />
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide3" className="btn btn-circle">❮</a> 
-      <a href="#slide1" className="btn btn-circle">❯</a>
+
+<div className="hero min-h-screen" style={{backgroundImage: 'url(https://ebook.projectbd.com/wp-content/uploads/2023/10/home-hero.jpg)'}}>
+  <div className="hero-overlay bg-opacity-70"></div>
+  <div className="hero-content text-center text-neutral-content">
+    <div className="max-w-md">
+      <h1 className="mb-5 text-5xl font-bold text-white">Welcome To Hitech</h1>
+      <p className="mb-5 text-lg font-medium">Take your best-branded products from us at the best prices.</p>
+      {/* <button className="btn btn-primary">Get Started</button> */}
     </div>
   </div>
 </div>
-</div>
+
+
 {/* Carosel end here */}
 
 <div className="flex justify-center">
 <div className=" bg-white py-6 w-[50%] mx-auto rounded-full shadow-xl -mt-14 z-10 absolute max-md:w-[83%]">
-        <h2 className=" text-blue-600 text-center font-bold text-xl max-md:text-base">Creating Magic, One Event at a Time: <br /> Your Event Specialists</h2>
+        <h2 className=" text-blue-600 text-center font-bold text-xl max-md:text-base">Tech Zone:  <br /> Your Ultimate Electronics Hub</h2>
     </div>
 </div>
     

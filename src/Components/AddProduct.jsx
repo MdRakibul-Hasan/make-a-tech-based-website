@@ -48,7 +48,7 @@ fetch('http://localhost:5000/product', {
 
     return (
         <div className="p-24">
-            <h2>Add product</h2>
+            <h2 className=" text-center font-bold text-2xl pb-10">Add product</h2>
 
 <form onSubmit={handleAddProduct}>
 {/* product name and brand name */}

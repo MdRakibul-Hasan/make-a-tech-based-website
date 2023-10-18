@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Register from './Components/Services/Register/Register.jsx';
 import './index.css'
-
+import ScrollToTop from "./Components/ScrollToTop.jsx";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -49,19 +49,19 @@ const router = createBrowserRouter([
       },
 
       {
-        path: '/apple',
+        path: '/Apple',
         element: <Apple></Apple>,
         loader: ()=>fetch('http://localhost:5000/product'),
         
       },
       {
-        path: '/google',
+        path: '/Google',
         element: <Google></Google>,
         loader: ()=>fetch('http://localhost:5000/product'),
         
       },
       {
-        path: '/intel',
+        path: '/Intel',
         element: <Intel></Intel>,
         loader: ()=>fetch('http://localhost:5000/product'),
         
@@ -73,13 +73,13 @@ const router = createBrowserRouter([
         
       },
       {
-        path: '/sony',
+        path: '/Sony',
         element: <Sony></Sony>,
         loader: ()=>fetch('http://localhost:5000/product'),
         
       },
       {
-        path: '/lenovo',
+        path: '/Lenovo',
         element: <Lenovo></Lenovo>,
         loader: ()=>fetch('http://localhost:5000/product'),
         
@@ -133,7 +133,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
        <AuthProvider>
-       <RouterProvider router={router} />
+ <RouterProvider router={router} />
        </AuthProvider>
   </React.StrictMode>,
 )

@@ -12,7 +12,7 @@ const Navbar = () => {
 const handleSignOut = () => {
   logOut()
   .then(result => {
-    const notify2 = () => toast.success('Your Sign Out is Successful', {
+    const notify2 = () => toast.success('Your Log Out is Successful', {
       position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,
@@ -47,7 +47,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
       <div className="container mx-auto py-2">
         <div className="flex items-center justify-between">
          
-          <div> <Link to="/"><img className="w-[30%]" src="https://ebook.projectbd.com/wp-content/uploads/2023/10/event-logo-white-bg-remove.png" alt="" /></Link> </div>
+          <div> <Link to="/"><img className="w-[30%]" src="https://ebook.projectbd.com/wp-content/uploads/2023/10/hitech-logo-1.png" alt="" /></Link> </div>
 
          
           <div className="hidden md:flex space-x-4">
@@ -55,11 +55,11 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
           <NavLink to="/" className={({isActive, isPending}) =>
 isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Home</NavLink>
 
-            {/* <NavLink to="/event" className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>My Event</NavLink> */}
+            <NavLink to="/addProduct" className={({isActive, isPending}) =>
+isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Add Product</NavLink>
                         
-            {/* <NavLink to="/getquote" className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Get Quote</NavLink> */}
+            <NavLink to="/myCart" className={({isActive, isPending}) =>
+isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>My Cart</NavLink>
 
           </div>
 
@@ -124,11 +124,11 @@ isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Get
         <NavLink to="/" className={({isActive, isPending}) =>
 isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Home</NavLink>
 <br />
-            {/* <NavLink to="/event" className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>My Event</NavLink>
+            <NavLink to="/addProduct" className={({isActive, isPending}) =>
+isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Add Product</NavLink>
    <br />                     
-            <NavLink to="/getquote" className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Get Quote</NavLink> */}
+            <NavLink to="/myCart" className={({isActive, isPending}) =>
+isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>My Cart</NavLink>
 
 <br />
 
