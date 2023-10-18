@@ -69,9 +69,9 @@ const router = createBrowserRouter([
         
       },
       {
-        path: '/UpdateProduct',
-        element: <ProtectedRoute> <UpdateProduct></UpdateProduct> </ProtectedRoute>,
-        loader: ()=>fetch('/data.json'),
+        path: '/updateProduct/:id',
+        element: <UpdateProduct></UpdateProduct>,
+        loader: ({params})=>fetch(`http://localhost:5000/product/${params.id}`)
         
       },
 

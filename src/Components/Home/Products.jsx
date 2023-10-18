@@ -1,8 +1,9 @@
 import { FaStar } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Products = ({product}) => {
 
-    const {name, brand, price, rating, option, description, image} = product;
+    const {_id, name, brand, price, rating, option, description, image} = product;
 
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
@@ -17,7 +18,7 @@ const Products = ({product}) => {
     <div className="btn-group flex justify-between items-center">
   
   <div><button className="btn">Details</button>
-  <button className="btn">Update</button>
+  <Link to={`/updateProduct/${_id}`}><button className="btn">Update</button></Link>
 </div>
     <div className="card-actions justify-end">
       <div className="badge badge-outline">{brand}</div> 
