@@ -55,11 +55,11 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
           <NavLink to="/" className={({isActive, isPending}) =>
 isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Home</NavLink>
 
-            <NavLink to="/event" className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>My Event</NavLink>
+            {/* <NavLink to="/event" className={({isActive, isPending}) =>
+isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>My Event</NavLink> */}
                         
-            <NavLink to="/getquote" className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Get Quote</NavLink>
+            {/* <NavLink to="/getquote" className={({isActive, isPending}) =>
+isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Get Quote</NavLink> */}
 
           </div>
 
@@ -95,7 +95,7 @@ isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Get
          
           {
  user ? 
-<Link onClick={handleSignOut} to="/" className="hidden md:block bg-white text-black py-1 px-3 rounded-full mt-1 hover:bg-slate-200">Sign Out</Link>
+<Link onClick={handleSignOut} to="/" className="hidden md:block bg-white text-black py-1 px-3 rounded-full mt-1 hover:bg-slate-200">Log Out</Link>
     :
  <Link to="/login" className="hidden md:block bg-white text-black py-1 px-3 rounded-full mt-1 hover:bg-slate-200">Login</Link>
 
@@ -124,11 +124,11 @@ isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Get
         <NavLink to="/" className={({isActive, isPending}) =>
 isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Home</NavLink>
 <br />
-            <NavLink to="/event" className={({isActive, isPending}) =>
+            {/* <NavLink to="/event" className={({isActive, isPending}) =>
 isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>My Event</NavLink>
    <br />                     
             <NavLink to="/getquote" className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Get Quote</NavLink>
+isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Get Quote</NavLink> */}
 
 <br />
 
@@ -155,7 +155,7 @@ isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Get
 
           {
  user ? 
-<Link onClick={handleSignOut} to="/login" className="bg-white text-black py-1 px-4 rounded-full mt-2">Sign Out</Link>
+<Link onClick={handleSignOut} to="/login" className="bg-white text-black py-1 px-4 rounded-full mt-2">Log Out</Link>
     :
  <Link to="/login" className="bg-white text-black py-1 px-4 rounded-full mt-2">Login</Link>
 

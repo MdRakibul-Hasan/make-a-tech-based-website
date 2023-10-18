@@ -14,8 +14,6 @@ import Login from './Components/Services/Login/Login.jsx';
 import AuthProvider from './Components/Services/AuthProvider.jsx';
 import ServiceDetailes from './Components/Home/ServiceDetailes.jsx';
 import ProtectedRoute from './Components/Services/ProtectedRoute/ProtectedRoute.jsx';
-import Event from './Components/Event/Event.jsx';
-import GetAQuote from './Components/OptionalPage/GetAQuote.jsx';
 import AboutUs from './Components/OptionalPage/AboutUs.jsx';
 import TermsAndConditions from './Components/OptionalPage/TermsAndConditions.jsx';
 import PrivacyPolicy from './Components/OptionalPage/PrivacyPolicy.jsx';
@@ -24,6 +22,11 @@ import AddProduct from './Components/AddProduct.jsx';
 import UpdateProduct from './Components/UpdateProduct.jsx';
 import MyCart from './Components/MyCart.jsx';
 import Apple from './Components/Brand/Apple.jsx';
+import Google from './Components/Brand/Google.jsx';
+import Intel from './Components/Brand/Intel.jsx';
+import Samsung from './Components/Brand/Samsung.jsx';
+import Sony from './Components/Brand/Sony.jsx';
+import Lenovo from './Components/Brand/Lenovo.jsx';
 
 const router = createBrowserRouter([
   {
@@ -44,15 +47,40 @@ const router = createBrowserRouter([
         loader: ()=>fetch('/data.json'),
         
       },
-      {
-        path: '/event',
-        element: <ProtectedRoute> <Event></Event> </ProtectedRoute>,
-        loader: ()=>fetch('/data.json'),
-        
-      },
+
       {
         path: '/apple',
         element: <Apple></Apple>,
+        loader: ()=>fetch('http://localhost:5000/product'),
+        
+      },
+      {
+        path: '/google',
+        element: <Google></Google>,
+        loader: ()=>fetch('http://localhost:5000/product'),
+        
+      },
+      {
+        path: '/intel',
+        element: <Intel></Intel>,
+        loader: ()=>fetch('http://localhost:5000/product'),
+        
+      },
+      {
+        path: '/Samsung',
+        element: <Samsung></Samsung>,
+        loader: ()=>fetch('http://localhost:5000/product'),
+        
+      },
+      {
+        path: '/sony',
+        element: <Sony></Sony>,
+        loader: ()=>fetch('http://localhost:5000/product'),
+        
+      },
+      {
+        path: '/lenovo',
+        element: <Lenovo></Lenovo>,
         loader: ()=>fetch('http://localhost:5000/product'),
         
       },

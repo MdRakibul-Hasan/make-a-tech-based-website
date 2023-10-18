@@ -1,11 +1,11 @@
 import { useLoaderData } from "react-router-dom";
 import Products from "../Home/Products";
 
+const Google = () => {
 
-const Apple = () => {
 
-const products = useLoaderData();
-const filteredProducts = products.filter(product => product.brand === 'Apple' && 'apple');
+    const products = useLoaderData();
+const filteredProducts = products.filter(product => product.brand === 'Google' && 'google');
     return (
         <div>
 <div className="grid md:grid-cols-2 gap-6 mx-10">
@@ -18,4 +18,4 @@ const filteredProducts = products.filter(product => product.brand === 'Apple' &&
     );
 };
 
-export default Apple;
+export default Google;

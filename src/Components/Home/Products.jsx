@@ -8,11 +8,13 @@ const Products = ({product}) => {
     return (
 
 <div className="max-w-sm rounded overflow-hidden shadow-lg mx-auto">
+<div className="flex justify-center max-h-[45vh]">
 <img
-  className="w-full"
+  className="w-[60%] "
   src={image}
   alt="Apple Watch Series 7 in colors pink, silver, and black"
 />
+</div>
 <div className="px-4 py-4">
   <div className="font-bold text-xl mb-2">
     <h2 className="text-gray-900 dark:text-white">

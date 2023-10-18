@@ -11,7 +11,7 @@ const {id, image, brand,} = card || {}
         <div>
 {/* try my own style cards
  */}
-<Link to={`/servicedetailes/${id}`}><div className="card w-96 bg-base-100 shadow-xl">
+<Link to={`/${brand}`}><div className="card w-96 bg-base-100 shadow-xl">
   <figure><img className="w-[60%]" src={image} alt="Shoes" /></figure>
   <div className="card-body flex-col justify-end flex-grow">
     <h2 className="text-center text-2xl font-bold">{brand}</h2>
