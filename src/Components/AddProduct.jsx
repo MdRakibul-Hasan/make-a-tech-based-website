@@ -18,7 +18,7 @@ const image = form.image.value;
 const newProduct = {name, brand, price, rating, option, description, image}
 console.log(newProduct);
 
-fetch('http://localhost:5000/product', {
+fetch('https://ass10-tech-company-server-7s0jmrr86-mdrakibul-hasan.vercel.app/product', {
     method: 'POST',
     headers: {
         'content-type' : 'application/json'

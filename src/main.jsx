@@ -51,37 +51,37 @@ const router = createBrowserRouter([
       {
         path: '/Apple',
         element: <Apple></Apple>,
-        loader: ()=>fetch('http://localhost:5000/product'),
+        loader: ()=>fetch('https://ass10-tech-company-server-7s0jmrr86-mdrakibul-hasan.vercel.app/product'),
         
       },
       {
         path: '/Google',
         element: <Google></Google>,
-        loader: ()=>fetch('http://localhost:5000/product'),
+        loader: ()=>fetch('https://ass10-tech-company-server-7s0jmrr86-mdrakibul-hasan.vercel.app/product'),
         
       },
       {
         path: '/Intel',
         element: <Intel></Intel>,
-        loader: ()=>fetch('http://localhost:5000/product'),
+        loader: ()=>fetch('https://ass10-tech-company-server-7s0jmrr86-mdrakibul-hasan.vercel.app/product'),
         
       },
       {
         path: '/Samsung',
         element: <Samsung></Samsung>,
-        loader: ()=>fetch('http://localhost:5000/product'),
+        loader: ()=>fetch('https://ass10-tech-company-server-7s0jmrr86-mdrakibul-hasan.vercel.app/product'),
         
       },
       {
         path: '/Sony',
         element: <Sony></Sony>,
-        loader: ()=>fetch('http://localhost:5000/product'),
+        loader: ()=>fetch('https://ass10-tech-company-server-7s0jmrr86-mdrakibul-hasan.vercel.app/product'),
         
       },
       {
         path: '/Lenovo',
         element: <Lenovo></Lenovo>,
-        loader: ()=>fetch('http://localhost:5000/product'),
+        loader: ()=>fetch('https://ass10-tech-company-server-7s0jmrr86-mdrakibul-hasan.vercel.app/product'),
         
       },
       {
@@ -99,7 +99,7 @@ const router = createBrowserRouter([
       {
         path: '/updateProduct/:id',
         element: <UpdateProduct></UpdateProduct>,
-        loader: ({params})=>fetch(`http://localhost:5000/product/${params.id}`)
+        loader: ({params})=>fetch(`https://ass10-tech-company-server-7s0jmrr86-mdrakibul-hasan.vercel.app/product/${params.id}`)
         
       },
 
