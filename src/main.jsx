@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Register from './Components/Services/Register/Register.jsx';
 import './index.css'
-import ScrollToTop from "./Components/ScrollToTop.jsx";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -12,7 +11,6 @@ import LayOut from './Components/LayOut.jsx';
 import Home from './Components/Home/Home.jsx';
 import Login from './Components/Services/Login/Login.jsx';
 import AuthProvider from './Components/Services/AuthProvider.jsx';
-import ServiceDetailes from './Components/Home/ServiceDetailes.jsx';
 import ProtectedRoute from './Components/Services/ProtectedRoute/ProtectedRoute.jsx';
 import AboutUs from './Components/OptionalPage/AboutUs.jsx';
 import TermsAndConditions from './Components/OptionalPage/TermsAndConditions.jsx';
@@ -46,12 +44,6 @@ const router = createBrowserRouter([
         path: '/productDetails/:id',
         element: <ProtectedRoute> <ProductDetails></ProductDetails></ProtectedRoute>,
         loader: ({params})=>fetch(`https://ass10server2.vercel.app/product/${params.id}`),
-        
-      },
-      {
-        path: '/servicedetailes/:id',
-        element: <ProtectedRoute><ServiceDetailes></ServiceDetailes></ProtectedRoute>,
-        loader: ()=>fetch('/data.json'),
         
       },
 
@@ -105,7 +97,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/updateProduct/:id',
-        element: <UpdateProduct></UpdateProduct>,
+        element: <ProtectedRoute><UpdateProduct></UpdateProduct></ProtectedRoute>,
         loader: ({params})=>fetch(`https://ass10server2.vercel.app/product/${params.id}`)
         
       },

@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import Sponser from "./Sponser";
 import Helmet from 'react-helmet';
 import ScrollToTop from "../ScrollToTop";
+import SliderAdsForHome from "./SliderAdsForHome";
 
 
 const Home = () => {
@@ -39,7 +40,7 @@ useEffect(() => {
 
 <div className="flex justify-center">
 <div className=" bg-white py-6 w-[50%] mx-auto rounded-full shadow-xl -mt-14 z-10 absolute max-md:w-[83%]">
-        <h2 className=" text-blue-600 text-center font-bold text-xl max-md:text-base">Tech Zone:  <br /> Your Ultimate Electronics Hub</h2>
+        <h2 className=" text-orange-600 text-center font-bold text-xl max-md:text-base">Tech Zone:  <br /> Your Ultimate Electronics Hub</h2>
     </div>
 </div>
     
@@ -51,33 +52,37 @@ useEffect(() => {
 
 {/* service card start here */}
 
-<div><h2 className="text-center font-bold text-3xl my-12">Our Services</h2></div>
+<div><h2 className="text-center font-bold text-3xl my-12">Discover the Latest in High-Tech Gadgets and Devices</h2></div>
             <div  data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" className="grid grid-cols-2 gap-8 px-16 pb-10 max-md:grid-cols-1 max-md:px-8 overflow-x-hidden">
                 {cards.map((card) => <Cards key={card.id} card={card}></Cards>)}
             </div>
             
-{/* our sponser */}
 
-<div className=" bg-white">
-<h2 className="text-center font-bold text-2xl mt-12 mb-4">Our Sponsors </h2>
-    <Sponser></Sponser>
-</div>
 
-<div className="overflow-x-hidden flex justify-between px-6 gap-6 items-center h-[80vh] max-md:flex-col max-md:h-[95vh] max-md:py-10 bg-[url('https://ebook.projectbd.com/wp-content/uploads/2023/10/background-image.jpg')] bg-cover">
+{/* <div className="overflow-x-hidden flex justify-between px-6 gap-6 items-center h-[80vh] max-md:flex-col max-md:h-[95vh] max-md:py-10 bg-[url('https://ebook.projectbd.com/wp-content/uploads/2023/10/home-2.jpg')] bg-cover">
 <img data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" className="w-[40%] rounded-md" src="https://ebook.projectbd.com/wp-content/uploads/2023/10/events-bg.png" alt="" />
 <div data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" className="px-4">
     <h2 className=" text-white text-2xl font-bold max-md:text-xl">Crafting Unforgettable Moments: <br />Your Premier Event Planner</h2>
     <p className=" text-white pb-4">At www.event.com, we are dedicated to turning your special moments into unforgettable memories. As your premier event planner, we bring creativity, precision, and a touch of magic to every celebration.</p>
 </div>
 
-</div>
+</div> */}
+<div className="pt-24 pb-14 max-md:pt-14"><SliderAdsForHome></SliderAdsForHome></div>
+
 
 
 
 {/* image gallery starts */}
-<div><h2 className="text-center font-bold text-3xl mt-12 mb-10">Event Gallery </h2></div>
-<div className=" overflow-x-hidden" data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"><ImageGallery></ImageGallery></div>
+<div><h2 className="text-center font-bold text-3xl mt-12 mb-10">Find Your Perfect Tech Match with Our Top-Notch Selection </h2></div>
+<div className="py-12"><ImageGallery></ImageGallery></div>
 
+
+{/* our sponser */}
+
+<div className=" bg-white">
+<h2 className="text-center font-bold text-2xl mt-12 mb-4">Our Sponsors </h2>
+    <Sponser></Sponser>
+</div>
 
         </div>
     );

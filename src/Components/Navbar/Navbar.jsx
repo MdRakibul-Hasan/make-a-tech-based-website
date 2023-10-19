@@ -43,7 +43,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 <div>
 <ToastContainer />
 
-<nav className="bg-black bg-opacity-70 fixed top-0 w-full z-20">
+<nav className="bg-orange-100 bg-opacity-100 sticky w-full z-20">
       <div className="container mx-auto py-2">
         <div className="flex items-center justify-between">
          
@@ -53,13 +53,13 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
           <div className="hidden md:flex space-x-4">
 
           <NavLink to="/" className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Home</NavLink>
+isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>Home</NavLink>
 
             <NavLink to="/addProduct" className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Add Product</NavLink>
+isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>Add Product</NavLink>
                         
             <NavLink to="/myCart" className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>My Cart</NavLink>
+isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>My Cart</NavLink>
 
           </div>
 
@@ -84,7 +84,7 @@ isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>My 
 
 {
  user ? 
- <h2 className="text-white text-xs">{user.displayName}</h2>
+ <h2 className="text-black text-xs">{user.displayName}</h2>
     :
  ""
 
@@ -95,9 +95,9 @@ isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>My 
          
           {
  user ? 
-<Link onClick={handleSignOut} to="/" className="hidden md:block bg-white text-black py-1 px-3 rounded-full mt-1 hover:bg-slate-200">Log Out</Link>
+<Link onClick={handleSignOut} to="/" className="hidden md:block bg-black text-white py-1 px-3 rounded-full mt-1 hover:bg-slate-700">Log Out</Link>
     :
- <Link to="/login" className="hidden md:block bg-white text-black py-1 px-3 rounded-full mt-1 hover:bg-slate-200">Login</Link>
+ <Link to="/login" className="hidden md:block bg-black text-white py-1 px-3 rounded-full mt-1 hover:bg-slate-700">Login</Link>
 
  }
 
@@ -105,7 +105,7 @@ isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>My 
   <div className="md:hidden">
     <button
       onClick={toggleMobileMenu}
-      className="text-white focus:outline-none"
+      className="text-black focus:outline-none"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
@@ -122,13 +122,13 @@ isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>My 
 
         <div className={`md:hidden ${mobileMenuOpen ? 'block' : 'hidden'}`}>
         <NavLink to="/" className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Home</NavLink>
+isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>Home</NavLink>
 <br />
             <NavLink to="/addProduct" className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>Add Product</NavLink>
+isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>Add Product</NavLink>
    <br />                     
             <NavLink to="/myCart" className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>My Cart</NavLink>
+isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>My Cart</NavLink>
 
 <br />
 
@@ -155,9 +155,9 @@ isPending ? "pending" : isActive ? "text-blue-400 font-bold" : "text-white"}>My 
 
           {
  user ? 
-<Link onClick={handleSignOut} to="/login" className="bg-white text-black py-1 px-4 rounded-full mt-2">Log Out</Link>
+<Link onClick={handleSignOut} to="/login" className="bg-black text-white py-1 px-4 rounded-full mt-2 hover:bg-slate-700">Log Out</Link>
     :
- <Link to="/login" className="bg-white text-black py-1 px-4 rounded-full mt-2">Login</Link>
+ <Link to="/login" className="bg-black text-white py-1 px-4 rounded-full mt-2 hover:bg-slate-700">Login</Link>
 
  }
 

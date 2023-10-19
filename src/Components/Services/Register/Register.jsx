@@ -104,7 +104,7 @@ createUser(email, password)
     return (
       <div
       className="bg-cover min-h-screen flex items-center justify-center"
-      style={{ backgroundImage: 'url(https://ebook.projectbd.com/wp-content/uploads/2023/10/Aniversary-big.jpg)' }}>
+      style={{ backgroundImage: 'url(https://ebook.projectbd.com/wp-content/uploads/2023/10/register-bg-iage.jpg)' }}>
         <Helmet><title>Register</title></Helmet>
       <ToastContainer />
       <div className="bg-black bg-opacity-50 p-4 my-24 sm:p-8 rounded-lg shadow-md w-full sm:w-96">
@@ -132,10 +132,10 @@ createUser(email, password)
           <div className="text-center">
             <button
               type="submit"
-              className="bg-blue-500 text-white w-full px-4 py-2 rounded hover:bg-blue-600"
+              className="bg-orange-600 text-white w-full px-4 py-2 rounded hover:bg-orange-700"
             >Register </button>
             
-          <p className="text-center m-1 text-white ">Already have an account, <Link to="/login" className="text-blue-500 font-bold">
+          <p className="text-center m-1 text-white ">Already have an account, <Link to="/login" className="text-orange-500 font-bold">
       Login</Link></p>
          
 

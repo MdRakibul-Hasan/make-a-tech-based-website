@@ -6,13 +6,13 @@ import ScrollToTop from "../ScrollToTop";
 const Sony = () => {
 
     const products = useLoaderData();
-    const filteredProducts = products.filter(product => product.brand === 'Sony');
+    const filteredProducts = products.filter(product => product.brand === 'Sony' || product.brand === 'sony');
     
 
     return (
         <div><ScrollToTop />
             <SliderAds></SliderAds>
-<div className="grid md:grid-cols-2 gap-6 mx-10">
+<div className="grid md:grid-cols-2 gap-6 mx-10 py-16">
 
 {filteredProducts.map(product => (
       <Products key={product._id} product={product} />

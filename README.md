@@ -1,17 +1,21 @@
 # Feature
 
-<h3> This project is created based on the social event management website</h3>
+<h3> This project is created based on Electronics andTechnology company website</h3>
+
+<h3> Website name : Hitech LTD </h3>
 
 Most useful feature given below:
 
 - Login/Registration. 
 - Google Auth login.
 - Private/Protected route.
-- Service lists.
-- Service details and price.
-- Add personal event with date.
+- Listed by different Brands.
+- Specific products based on brand.
+- Add product.
 - Get offer with count down time.
-- Get Quote for your event. 
+- Update any product data.
+- Directly control data from UI to MongoDB.
+- Live notification of every activities. 
 
-[You can visit this demo website](http://successful-bird.ass9.surge.sh/).
-:birthday:
+[You can visit this demo website](https://future-ass10-tech-company.surge.sh/).
+:Technology:

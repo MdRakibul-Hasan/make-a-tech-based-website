@@ -176,7 +176,7 @@ notify();
         return (
 <div
       className="bg-cover min-h-screen flex items-center justify-center"
-      style={{ backgroundImage: 'url(https://ebook.projectbd.com/wp-content/uploads/2023/10/Engagement-small.jpg)' }}> <Helmet><title>Login</title></Helmet>
+      style={{ backgroundImage: 'url(https://ebook.projectbd.com/wp-content/uploads/2023/10/loginpagebg.jpg)' }}> <Helmet><title>Login</title></Helmet>
       <ToastContainer />
       <div className="bg-black bg-opacity-50 p-4 my-24 sm:p-8 rounded-lg shadow-md w-full sm:w-96">
         <h2 className="text-3xl text-white font-semibold mb-4 mt-2 text-center">Login</h2>
@@ -206,11 +206,11 @@ notify();
           <div className="text-center">
             <button
               type="submit"
-              className="bg-blue-500 text-white w-full px-4 py-2 rounded hover:bg-blue-600"
+              className="bg-orange-600 text-white w-full px-4 py-2 rounded hover:bg-orange-700"
             >
               Login
             </button>
-            <p className="text-center m-1 text-white ">Don't have an account? <Link to="/register" className="text-blue-500 font-bold">
+            <p className="text-center m-1 text-white ">Don't have an account? <Link to="/register" className="text-orange-500 font-bold">
           Register</Link></p>
           <p className="text-center m-1 text-white ">Login with</p>
           <div className="flex justify-center"><img onClick={handleGoogleBtn} className="w-[15%] hover:cursor-pointer" src="https://ebook.projectbd.com/wp-content/uploads/2023/10/google-icon.png" alt="" /></div>

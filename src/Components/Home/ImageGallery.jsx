@@ -6,11 +6,11 @@ const ImageGallery = () => {
     return (
         <div className="pb-10">
             <Marquee pauseOnHover={true}>
-  <img className="w-[60vh] mr-2" src="https://ebook.projectbd.com/wp-content/uploads/2023/10/happybd-small.jpg" alt="" />
-  <img className="w-[60vh] mr-2" src="https://ebook.projectbd.com/wp-content/uploads/2023/10/Aniversary-big.jpg" alt="" />
-  <img className="w-[60vh] mr-2" src="https://ebook.projectbd.com/wp-content/uploads/2023/10/Engagement-small.jpg" alt="" />
-  <img className="w-[60vh] mr-2" src="https://ebook.projectbd.com/wp-content/uploads/2023/10/Retirement-party-small-big.jpg" alt="" />
-  <img className="w-[60vh] mr-2" src="https://ebook.projectbd.com/wp-content/uploads/2023/10/baby-shower-big.jpg" alt="" />
+  <img className="w-[50vh] mr-2" src="https://ebook.projectbd.com/wp-content/uploads/2023/10/sony-2.jpg" alt="" />
+  <img className="w-[50vh] mr-2" src="https://ebook.projectbd.com/wp-content/uploads/2023/10/sony-3.jpg" alt="" />
+  <img className="w-[50vh] mr-2" src="https://ebook.projectbd.com/wp-content/uploads/2023/10/sony-4.jpg" alt="" />
+  <img className="w-[50vh] mr-2" src="https://ebook.projectbd.com/wp-content/uploads/2023/10/lenovo-laptop.jpg" alt="" />
+  <img className="w-[50vh] mr-2" src="https://ebook.projectbd.com/wp-content/uploads/2023/10/Google-chromobook-2.jpg" alt="" />
 </Marquee>
         </div>
     );
