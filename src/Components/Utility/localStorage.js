@@ -1,3 +1,5 @@
+
+
 const getStoredProductData = () => {
     const storedProductData = localStorage.getItem('Product-data');
 
@@ -18,5 +20,18 @@ if(!exists){
 
 }
 
+const removeProduct = _id => {
+    const storedProductDatas = getStoredProductData();
+    const updatedProductDatas = storedProductDatas.filter(productId => productId !== _id);
+    localStorage.setItem('Product-data', JSON.stringify(updatedProductDatas));
+
+
+  };
+  
+
+
+
+
+export {removeProduct}
 export {saveProduct}
 export {getStoredProductData}
