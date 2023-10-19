@@ -23,7 +23,7 @@ const UpdateProduct = () => {
     const newProduct = {name, brand, price, rating, option, description, image}
     console.log(newProduct);
     
-    fetch(`https://ass10-tech-company-server-7s0jmrr86-mdrakibul-hasan.vercel.app/product/${_id}`, {
+    fetch(`https://ass10server2.vercel.app/product/${_id}`, {
         method: 'PUT',
         headers: {
             'content-type' : 'application/json'

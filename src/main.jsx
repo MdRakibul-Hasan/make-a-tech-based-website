@@ -27,6 +27,7 @@ import Intel from './Components/Brand/Intel.jsx';
 import Samsung from './Components/Brand/Samsung.jsx';
 import Sony from './Components/Brand/Sony.jsx';
 import Lenovo from './Components/Brand/Lenovo.jsx';
+import ProductDetails from './Components/Home/ProductDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,12 @@ const router = createBrowserRouter([
 
       },
       {
+        path: '/productDetails/:id',
+        element: <ProtectedRoute> <ProductDetails></ProductDetails></ProtectedRoute>,
+        loader: ({params})=>fetch(`https://ass10server2.vercel.app/product/${params.id}`),
+        
+      },
+      {
         path: '/servicedetailes/:id',
         element: <ProtectedRoute><ServiceDetailes></ServiceDetailes></ProtectedRoute>,
         loader: ()=>fetch('/data.json'),
@@ -51,37 +58,37 @@ const router = createBrowserRouter([
       {
         path: '/Apple',
         element: <Apple></Apple>,
-        loader: ()=>fetch('https://ass10-tech-company-server-7s0jmrr86-mdrakibul-hasan.vercel.app/product'),
+        loader: ()=>fetch('https://ass10server2.vercel.app/product'),
         
       },
       {
         path: '/Google',
         element: <Google></Google>,
-        loader: ()=>fetch('https://ass10-tech-company-server-7s0jmrr86-mdrakibul-hasan.vercel.app/product'),
+        loader: ()=>fetch('https://ass10server2.vercel.app/product'),
         
       },
       {
         path: '/Intel',
         element: <Intel></Intel>,
-        loader: ()=>fetch('https://ass10-tech-company-server-7s0jmrr86-mdrakibul-hasan.vercel.app/product'),
+        loader: ()=>fetch('https://ass10server2.vercel.app/product'),
         
       },
       {
         path: '/Samsung',
         element: <Samsung></Samsung>,
-        loader: ()=>fetch('https://ass10-tech-company-server-7s0jmrr86-mdrakibul-hasan.vercel.app/product'),
+        loader: ()=>fetch('https://ass10server2.vercel.app/product'),
         
       },
       {
         path: '/Sony',
         element: <Sony></Sony>,
-        loader: ()=>fetch('https://ass10-tech-company-server-7s0jmrr86-mdrakibul-hasan.vercel.app/product'),
+        loader: ()=>fetch('https://ass10server2.vercel.app/product'),
         
       },
       {
         path: '/Lenovo',
         element: <Lenovo></Lenovo>,
-        loader: ()=>fetch('https://ass10-tech-company-server-7s0jmrr86-mdrakibul-hasan.vercel.app/product'),
+        loader: ()=>fetch('https://ass10server2.vercel.app/product'),
         
       },
       {
@@ -93,13 +100,13 @@ const router = createBrowserRouter([
       {
         path: '/myCart',
         element: <ProtectedRoute> <MyCart></MyCart> </ProtectedRoute>,
-        loader: ()=>fetch('/data.json'),
+        loader: ()=>fetch('https://ass10server2.vercel.app/product'),
         
       },
       {
         path: '/updateProduct/:id',
         element: <UpdateProduct></UpdateProduct>,
-        loader: ({params})=>fetch(`https://ass10-tech-company-server-7s0jmrr86-mdrakibul-hasan.vercel.app/product/${params.id}`)
+        loader: ({params})=>fetch(`https://ass10server2.vercel.app/product/${params.id}`)
         
       },
 
