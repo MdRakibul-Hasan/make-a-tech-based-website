@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
+import ScrollToTop from "./ScrollToTop";
 
 
 const UpdateProduct = () => {
@@ -49,7 +50,7 @@ const UpdateProduct = () => {
 
 
     return (
-        <div className="p-24">
+        <div className="p-24"><ScrollToTop />
             <h2>Update product</h2>
 
 <form onSubmit={handleUpdateProduct}>

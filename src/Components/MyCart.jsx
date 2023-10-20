@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { getStoredProductData, removeProduct } from "./Utility/localStorage";
 import Swal from "sweetalert2";
+import ScrollToTop from "./ScrollToTop";
 
 const MyCart = () => {
   const mycarts = useLoaderData();
@@ -54,8 +55,8 @@ const MyCart = () => {
   };
 
   return (
-    <div>
-      <h2 className="text-xl font-semibold text-center pt-20">Total Product: {storedProducts.length}</h2>
+    <div><ScrollToTop />
+      <h2 className="text-xl font-semibold text-center pt-12">Total Product: {storedProducts.length}</h2>
       <div className="grid grid-cols-2 max-md:grid-cols-1 gap-5 px-16 mt-10 max-md:px-2">
         {storedProducts.slice(0, dataLength).map((product) => (
 

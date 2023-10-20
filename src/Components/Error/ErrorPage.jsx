@@ -15,7 +15,8 @@ const ErrorPage = () => {
     return (
         <div className="overflow-x-hidden" data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"><Helmet><title>404</title></Helmet>
             <div className="flex flex-col justify-center items-center align-middle h-[100vh]">
-                <h2 className="font-bold text-5xl flex justify-center mb-4 text-blue-600">404</h2>
+                <img src="https://t4.ftcdn.net/jpg/03/88/63/83/360_F_388638369_wSBADhKfhiTx6Q5Pz1xfdpy6zotku1Sg.jpg" alt="" />
+            
                  <h2 className="font-bold text-2xl flex justify-center mb-4 text-center">Bad user request <br />
                  Page not found </h2>
                  <NavLink to="/">

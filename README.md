@@ -1,6 +1,6 @@
 # Feature
 
-<h3> This project is created based on Electronics andTechnology company website</h3>
+<h3> This project is created based on Electronics and Technology company website</h3>
 
 <h3> Website name : Hitech LTD </h3>
 
@@ -18,4 +18,4 @@ Most useful feature given below:
 - Live notification of every activities. 
 
 [You can visit this demo website](https://future-ass10-tech-company.surge.sh/).
-:Technology:
+

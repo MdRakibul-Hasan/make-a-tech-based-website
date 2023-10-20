@@ -15,6 +15,8 @@ const option = form.option.value;
 const description = form.description.value;
 const image = form.image.value;
 
+
+
 const newProduct = {name, brand, price, rating, option, description, image}
 console.log(newProduct);
 
@@ -38,16 +40,10 @@ fetch('https://ass10server2.vercel.app/product', {
     }
 })
 
-
 } 
 
-
-
-
-
-
-    return (
-        <div className="p-24">
+  return (
+        <div className="px-20 py-14">
             <h2 className=" text-center font-bold text-2xl pb-10">Add product</h2>
 
 <form onSubmit={handleAddProduct}>

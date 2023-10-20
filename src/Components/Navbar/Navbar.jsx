@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Navbar = () => {
 
     const {user, logOut} = useContext(AuthContext);
+
     
 
 const handleSignOut = () => {
@@ -63,22 +64,15 @@ isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>M
 
           </div>
 
-          {/* {
- user ? 
- <img className="hidden md:block bg-white rounded-full w-[4%]" src={user.photoURL} alt="" />
-
-    :
- ""
-
- } */}
+ 
 
 <div className="flex justify-center items-center mx-1 max-md:hidden">
 {
  user ? 
- <img className=" bg-white rounded-full w-[15%] mx-1" src={user.photoURL} alt="" />
+ <img className=" bg-white rounded-full w-[6vh] mx-1" src={user.photoURL} alt="" />
  
     :
- ""
+ <img className=" bg-white rounded-full w-[6vh] mx-1" src="https://img.freepik.com/premium-vector/anonymous-user-circle-icon-vector-illustration-flat-style-with-long-shadow_520826-1931.jpg" alt="" />
 
  }
 
@@ -86,18 +80,23 @@ isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>M
  user ? 
  <h2 className="text-black text-xs">{user.displayName}</h2>
     :
- ""
+    <h2 className="text-black text-xs">No User</h2>
 
  }
+
+
+
+
+
 </div>
 
 
          
           {
  user ? 
-<Link onClick={handleSignOut} to="/" className="hidden md:block bg-black text-white py-1 px-3 rounded-full mt-1 hover:bg-slate-700">Log Out</Link>
+<Link onClick={handleSignOut} to="/" className="hidden md:block bg-orange-600 text-white py-1 px-3 rounded-lg mt-1 hover:bg-orange-700">Log Out</Link>
     :
- <Link to="/login" className="hidden md:block bg-black text-white py-1 px-3 rounded-full mt-1 hover:bg-slate-700">Login</Link>
+ <Link to="/login" className="hidden md:block bg-orange-600 text-white py-1 px-3 rounded-lg mt-1 hover:bg-orange-700">Login</Link>
 
  }
 
@@ -135,29 +134,32 @@ isPending ? "pending" : isActive ? "text-orange-600 font-bold" : "text-black"}>M
 <div className="flex my-2">
 {
  user ? 
- <img className=" bg-white rounded-full w-[6%]" src={user.photoURL} alt="" />
+ <img className=" bg-white rounded-full w-[6vh] mx-1" src={user.photoURL} alt="" />
  
     :
- ""
+ <img className=" bg-white rounded-full w-[6vh] mx-1" src="https://img.freepik.com/premium-vector/anonymous-user-circle-icon-vector-illustration-flat-style-with-long-shadow_520826-1931.jpg" alt="" />
 
  }
 
 {
  user ? 
- <h2 className="text-white">{user.displayName}</h2>
+ <h2 className="text-black text-xs">{user.displayName}</h2>
     :
- ""
+    <h2 className="text-black text-xs">No User</h2>
 
  }
+
+
+
 </div>
 
 
 
           {
  user ? 
-<Link onClick={handleSignOut} to="/login" className="bg-black text-white py-1 px-4 rounded-full mt-2 hover:bg-slate-700">Log Out</Link>
+<Link onClick={handleSignOut} to="/login" className="bg-black text-white py-1 px-4 rounded-lg mt-2 hover:bg-slate-700">Log Out</Link>
     :
- <Link to="/login" className="bg-black text-white py-1 px-4 rounded-full mt-2 hover:bg-slate-700">Login</Link>
+ <Link to="/login" className="bg-black text-white py-1 px-4 rounded-lg mt-2 hover:bg-slate-700">Login</Link>
 
  }
 

@@ -12,11 +12,20 @@ const Register = () => {
     const navigate = useNavigate();
     const location = useLocation();
     
+    const [name, setName] = useState('');
+    const [image, setImage] = useState(null);
+
+
+
+
 
 const handleRegister = e =>{
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
+
+
+
 
 if (password.length < 6){
     const notify3 = () => toast.error('The password is less than 6 characters', {
@@ -64,8 +73,8 @@ else if(!/[@!#$%*&]/.test(password)){
 
 
 
-
-createUser(email, password)
+console.log(email, password, name, image);
+createUser(email, password, name, image)
     .then(result => {
         const notify2 = () => toast.success('Congratulation, Your registration is Successful', {
             position: "top-right",
@@ -110,6 +119,33 @@ createUser(email, password)
       <div className="bg-black bg-opacity-50 p-4 my-24 sm:p-8 rounded-lg shadow-md w-full sm:w-96">
         <h2 className="text-3xl text-white font-semibold mb-4 mt-2 text-center">Register</h2>
         <form onSubmit={handleRegister}>
+
+
+        <div className="mb-4">
+    <label className="block text-white">Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      className="border border-gray-300 p-2 w-full rounded"
+      placeholder="Name"
+      value={name}
+      onChange={(e) => setName(e.target.value)}
+      required
+    />
+  </div>
+
+  <div className="mb-4">
+    <label className="block text-white">Profile Picture</label>
+    <input
+    className="border border-gray-300 p-2 w-full rounded bg-white"
+      type="file"
+      id="image" name="image"
+      onChange={(e) => setImage(e.target.files[0])}
+      required
+    />
+  </div>
+          
           <div className="mb-4">
             <label className="block text-white">
               Email
@@ -143,41 +179,7 @@ createUser(email, password)
         </form>
       </div>
 
-            {/* <div className="min-h-screen bg-base-200"> */}
-            {/* <h2 className="text-3xl my-8 text-center">Register now</h2>
-  <div className="hero-content min-h-screen bg-base-100">
-
-    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-      <div className="card-body">
-      <form onSubmit={handleRegister}>
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text">Email</span>
-          </label>
-          <input type="email" name="email" placeholder="email" className="input input-bordered" required />
-        </div>
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text">Password</span>
-          </label>
-          <input type="password" name="password" placeholder="password" className="input input-bordered" required />
-          <label className="label">
-            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-          </label>
-        </div>
-        <div className="form-control">
-          <button className="btn btn-primary">Register</button>
-        </div>
-        
-        </form>
-        <p className="text-center mt-4">Already have an account, <Link to="/login" className="text-blue-500 font-bold">
-      Login</Link></p>
-        </div>
-      
-
  
-    </div>
-  </div> */}
  </div>
         
     );

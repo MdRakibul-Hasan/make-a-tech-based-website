@@ -1,59 +1,56 @@
-import { Link } from "react-router-dom";
 import Helmet from 'react-helmet';
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
-    return (
-        <div><Helmet><title>About Us</title></Helmet>
-            <div>
-
-                <div className="py-8 my-24 px-12">
-      <h2 className="text-3xl font-semibold mb-4">About Us</h2>
-      <p>
-        Welcome to{' '}
-        <Link to="/"><a href="#" className="text-blue-500 hover:underline">
-          www.event.com
-        </a></Link>
-        , your premier destination for creating memorable social events that last a lifetime. We are passionate about bringing your dreams to life and crafting experiences that leave a lasting impression on you and your guests.
-      </p>
-      <p>
-        At www.event.com, we understand that every event is unique and special. With a dedicated team of event planners and a wealth of experience, we are committed to making your vision a reality. Whether you're celebrating a wedding, birthday, anniversary, engagement, retirement, or a baby shower, we have the expertise to turn your ideas into extraordinary celebrations.
-      </p>
-      <h3 className="text-xl font-semibold mt-4">Our Services</h3>
-      <ul className="list-disc pl-6 mt-2">
-        <li>
-          <strong>Wedding Parties:</strong> Your love story deserves a celebration that reflects your unique bond. We specialize in creating romantic, enchanting weddings that capture the essence of your journey together.
-        </li>
-        <li>
-          <strong>Birthday Parties:</strong> Make each birthday unforgettable with our creative and fun-filled party planning. Whether it's a milestone birthday or an intimate gathering, we'll ensure it's a day to remember.
-        </li>
-        <li>
-          <strong>Anniversary Celebrations:</strong> Commemorate your journey together with an anniversary celebration that rekindles your love. We create elegant and heartfelt events to mark each year of your union.
-        </li>
-        <li>
-          <strong>Engagement Parties:</strong> Begin your journey to "I do" with a memorable engagement party. We'll help you set the stage for your upcoming wedding and create beautiful memories along the way.
-        </li>
-        <li>
-          <strong>Retirement Parties:</strong> Celebrate a successful career and the beginning of a new chapter with a retirement party that honors your achievements and embraces the future.
-        </li>
-        <li>
-          <strong>Baby Showers:</strong> Welcome a new addition to your family with joy and excitement. Our baby shower planning will ensure this special moment is filled with love and anticipation.
-        </li>
-      </ul>
-      <h3 className="text-xl font-semibold mt-4">Contact Us</h3>
-      <p>
-        Have questions or ready to start planning your next event? Reach out to us at{' '}
-        <a href="mailto:event@event.com" className="text-blue-500 hover:underline">
-          event@event.com
-        </a>
-        . Our dedicated team is here to assist you in creating the perfect social event that reflects your style and personality.
-      </p>
-      <p>
-        Let us be a part of your special moments, and together, we'll make memories that last a lifetime.
-      </p>
+  return (
+    
+    <div><Helmet><title>About Us</title></Helmet>
+      <div className="pb-8 pt-6 my-4 px-12">
+        <h2 className="text-3xl font-semibold mb-4">About Us</h2>
+        <p>
+          Welcome to{' '}
+          <Link to="/">
+            <a href="#" className="text-blue-500 hover:underline">
+              www.hitech.com
+            </a>
+          </Link>
+          , your one-stop shop for the latest gadgets, electronics, and cutting-edge technology devices. We are dedicated to providing our customers with top-quality products from leading brands in the electronics industry.
+        </p>
+        <p>
+          At www.hitech.com, we understand the importance of staying ahead in the digital era. Our mission is to offer a comprehensive selection of products ranging from smartphones, laptops, smartwatches, cameras, and much more, all at competitive prices.
+        </p>
+        <h3 className="text-xl font-semibold mt-4">Our Products</h3>
+        <ul className="list-disc pl-6 mt-2">
+          <li>
+            <strong>Smartphones:</strong> Discover the latest smartphone models from renowned brands, each equipped with state-of-the-art features and cutting-edge technology.
+          </li>
+          <li>
+            <strong>Laptops and Computers:</strong> Explore a diverse range of laptops and computers designed to meet various computing needs, from sleek ultrabooks to powerful gaming rigs.
+          </li>
+          <li>
+            <strong>Wearable Devices:</strong> Stay connected and monitor your health with our collection of smartwatches, fitness trackers, and other wearable gadgets.
+          </li>
+          <li>
+            <strong>Cameras and Accessories:</strong> Capture every moment with high-quality cameras and photography accessories that cater to both amateur and professional photographers.
+          </li>
+          <li>
+            <strong>Home Electronics:</strong> Enhance your living space with our selection of smart home devices, entertainment systems, and other home electronics for a more connected lifestyle.
+          </li>
+        </ul>
+        <h3 className="text-xl font-semibold mt-4">Contact Us</h3>
+        <p>
+          Do you have any questions or need assistance with your purchase? Contact our dedicated support team at{' '}
+          <a href="mailto:info@hitech.com" className="text-blue-500 hover:underline">
+            info@hitech.com
+          </a>
+          . We are here to ensure you have a seamless shopping experience and find the perfect electronics that suit your needs.
+        </p>
+        <p>
+          Let www.hitech.com be your trusted source for all your tech needs, and embark on a journey of innovation and discovery with our range of cutting-edge products.
+        </p>
+      </div>
     </div>
-            </div>
-        </div>
-    );
+  );
 };
 
 export default AboutUs;
